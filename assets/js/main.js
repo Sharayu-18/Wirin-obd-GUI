@@ -101,9 +101,15 @@ let swiper = new Swiper(".popular__container", {
 });
 // =================POPUP===============
 
-  function openPop() {
+  function openPopc() {
    var myWind = window.open("./popup.html", "subWindow", "HEIGHT=600, WIDTH=800, left=500, top=200, align-self='center")
   }
+  function openPopcv() {
+    var myWind = window.open("./popcellvoltage.html", "subWindow", "HEIGHT=600, WIDTH=800, left=500, top=200, align-self='center")
+   }
+   function openPopv() {
+    var myWind = window.open("./popvoltage.html", "subWindow", "HEIGHT=600, WIDTH=800, left=500, top=200, align-self='center")
+   }
                               
 // ==================Graph===============
 
