@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- ===================Map===================== -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- ===================popup============== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>OBD - WIRIN</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container" style="max-width: 1445px;">
+            <a href="#" class="nav__logo">
+                <i class="ri-steering-line"></i>
+                Onboard Diagnostics
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Onboard</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">Diagnostics</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Navigation</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+
+        </nav>
+
+    </header>
+    <!-- <script src="assets/js/main.js" type="text/javascript"></script> -->
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home" style="padding:2rem 0 2rem;">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+
+
+            <div class="home__container  container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        WiPoD
+                    </h1>
+                    <h2 class="home__subtitle">
+                        A Project By WIRIN
+                    </h2>
+                    <h3 class="home__elec">
+                        <i class="ri-flashlight-fill"></i>
+                        Electric car
+                    </h3>
+                </div>
+                <img src="assets/img/home.png" alt="" class="home__img">
+                <div class="home__car">
+                    <div class="home__car-data">
+                        <div class="home__car-icon">
+                            <i class="ri-flashlight-fill"></i>
+                        </div>
+                        <h2 class="home__car-number" id="battery">94%</h2>
+                        <h3 class="home__car-name">BATTERY</h3>
+                    </div>
+                    <div class="home__car-data">
+                        <div class="home__car-icon">
+                            <i class="ri-route-line"></i>
+                        </div>
+                        <h2 class="home__car-number" id="range">873Km</h2>
+                        <h3 class="home__car-name">Distance <br> to empty</h3>
+                    </div>
+                    <div class="home__car-data">
+                        <div class="home__car-icon">
+                            <i class="ri-temp-hot-line"></i>
+                        </div>
+                        <h2 class="home__car-number" id="temp">24°C</h2>
+                        <h3 class="home__car-name">TEMPERATURE</h3>
+                    </div>
+
+
+                </div>
+
+                <a href="#onboard" class="home__button" id="start">START</a>
+            </div>
+
+        </section>
+        <!--==================== Onboard ====================-->
+        <section class="onboard section" id="onboard">
+
+
+            <div class="onboard__card">
+                <div class="onboard__subcard">
+
+                    <div id="revmeter">
+                        <!-- class="col-sm-6" -->
+                        <div class="gauge" style="--rpm: 2000; --limiter:6700;  --gauge-value: var(--rpm) / 1000;">
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">0</div>
+                            </div>
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">1</div>
+                            </div>
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">2</div>
+                            </div>
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">3</div>
+                            </div>
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">4</div>
+                            </div>
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">5</div>
+                            </div>
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="highlighted line"></span>
+                                <span class="highlighted line"></span>
+                                <span class="highlighted line"></span>
+
+                                <div class="label">6</div>
+                            </div>
+                            <div class="digit">
+                                <span class="highlighted line"></span>
+                                <span class="highlighted line"></span>
+                                <span class="highlighted line"></span>
+                                <span class="highlighted line"></span>
+                                <span class="separating line"></span>
+                                <span class="highlighted line"></span>
+                                <span class="highlighted line"></span>
+                                <span class="highlighted line"></span>
+                                <span class="highlighted line"></span>
+
+                                <div class="label">7</div>
+                            </div>
+                            <div class="digit">
+                                <div class="label">8</div>
+                            </div>
+
+                            <div class=""></div>
+
+                            <div class="pointer">
+                                <div class="hand"></div>
+                            </div>
+
+                            <div class="gear"></div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="shape shape__rpm"></div> -->
+                    <div id="clock">
+                        <p class="time" id="odometer">00031</p>
+                        <p class="date">Km</p>
+                        <p class="text">Distance Covered</p>
+                    </div>
+                    <div id="speedmeter">
+                        <div class="gauge"
+                            style="--kmh: 0; --start-angle: 0deg; --digits-angle: 30deg; --lines-count: 6; --digits-count: 10; --gauge-value: var(--kmh) / 30;">
+
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">0</div>
+                            </div>
+
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">30</div>
+                            </div>
+
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">60</div>
+                            </div>
+
+                            <div class="highlighted digit">
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">90</div>
+                            </div>
+
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">120</div>
+                            </div>
+
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">150</div>
+                            </div>
+
+                            <div class="highlighted digit">
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">180</div>
+                            </div>
+
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">210</div>
+                            </div>
+
+                            <div class="digit">
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+                                <span class="separating line"></span>
+                                <span class="line"></span>
+
+                                <div class="label">240</div>
+                            </div>
+
+                            <div class="highlighted digit">
+                                <div class="label">270</div>
+                            </div>
+
+                            <div class="pointer">
+                                <div class="hand"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__group">
+                    <div class="steer__card" style="background:transparent; width:95%; padding-top: 0;">
+                        <div>
+                            <img id="steering" src="assets/img/wheel.png" alt="" class="about__img">
+                            <script>
+                                
+                            </script>
+                        </div>
+                    </div>
+                    <div class="about__card">
+                        <span class="about__card-description" style="font-size: large;">
+                            Steer Angle
+                        </span><span id="steerangle" class="about__card-title" style="padding-left: 8px; font-size:xx-large;">30°</span>
+                        
+                    </div>
+                </div>
+                <div class="steerdata__card">
+                    <div class="about__data">
+                        <div class="about__data-grid">
+                            <img src="assets/img/engineTemp.png" alt="" class="about__data-grid-item">
+                            <p class=" about__data-grid-item" style="font-size: x-large;">
+                                Motor Temperature
+                            </p></span>
+                        </div>
+                        <p class="about__description" id="motortemp">
+                            195°F
+                        </p>
+                        <div class="about__data-grid">
+                            <img src="assets/img/batteryTemp.png" alt="" class="about__data-grid-item"
+                                style="text-align: start;">
+                            <p class=" about__data-grid-item" style="font-size: x-large;">
+                                Battery Temperature</p>
+                        </div>
+                        <div class="about__data-grid">
+                            <span class="about__data-grid-item"></span>
+                            <p class="about__description about__data-grid-item" id="batterytemp">
+                                70°F </p>
+                        </div>
+                        
+                        <!-- <a href="#" class="button">Know more</a> -->
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--==================== POPULAR ====================-->
+        <section class="popular section" id="popular">
+            <h2 class="section__title">
+                Analytics
+            </h2>
+            <div class="popular__container container swiper">
+                <div class="swiper-wrapper">
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+                        <h1 class="popular__title">Current</h1>
+                        <h3 class="popular__subtitle">Charging or Discharging Current</h3>
+                        <!-- <img src="assets/img/popular1.png" alt="" class="popular__img"> -->
+                        <div class="wrapper">
+                            <canvas id='c'  style="width: 100%;">
+                                <div class="label">text</div>
+                            </canvas>
+                            <script  src="./assets/js/graph1.js"></script>
+
+                            
+                        </div>
+
+                        <div class="popular__data">
+
+                            <div class="popular__data-group">
+                                <i class="ri-character-recognition-fill"></i>
+                                <h3 class="popular__price" id="current">10.5A</h3>
+                            </div>
+                        </div>
+
+                        <button class="button popular__button" onclick="openPop()">
+                            <i class="ri-line-chart-line"></i>
+
+                        </button>
+
+                    </article>
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+                        <h1 class="popular__title">Voltage</h1>
+                        <h3 class="popular__subtitle">Real Time Voltage</h3>
+                        <!-- <img src="assets/img/popular1.png" alt="" class="popular__img"> -->
+                        <div class="wrapper">
+                            <canvas id='c1' style="width: 100%;">
+                                <div class="label">text</div>
+
+                            </canvas>
+                            <script  src="./assets/js/graph2.js"></script>
+
+                        </div>
+
+                        <div class="popular__data">
+
+                            <div class="popular__data-group">
+                                <i class="ri-character-recognition-fill"></i>
+                                <h3 class="popular__price"  id="voltage">12V</h3>
+                            </div>
+                        </div>
+                        <button class="button popular__button" onclick="openPop()">
+                            <i class="ri-line-chart-line"></i>
+                        </button>
+                    </article>
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+                        <h1 class="popular__title">Cell Voltage</h1>
+                        <h3 class="popular__subtitle">Voltage of invidual cell</h3>
+                        <!-- <img src="assets/img/popular1.png" alt="" class="popular__img"> -->
+                        <div class="wrapper">
+                            <canvas id='c2'style="width: 100%;">
+                                                        <div class="label">text</div>
+                            </canvas>
+                            <script  src="./assets/js/graph3.js"></script>
+                        </div>
+
+                        <div class="popular__data">
+
+                            <div class="popular__data-group">
+                                <i class="ri-charging-pile-2-line"></i></i>
+                                <h3 class="popular__price" >10.5A</h3>
+                            </div>
+                        </div>
+                        <button class="button popular__button" onclick="openPop()">
+                            <i class="ri-line-chart-line"></i>
+                        </button>
+
+                    </article>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </section>
+
+        <!--==================== FEATURES ====================-->
+        <section class="features section">
+            <h2 class="section__title">
+                Tire Pressure
+            </h2>
+            <div class="features__container container grid">
+                <div class="features__group">
+                    <img src="assets/img/features.png" alt="" class="features__img">
+                    <div class="features__card features__card-1">
+                        <h3 class="features__card-title" id="fl" >31Psi</h3>
+                        <p class="features__card-description">
+                            FL
+                        </p>
+                    </div>
+                    <div class="features__card features__card-2">
+                        <h3 class="features__card-title" id="bl">32Psi</h3>
+                        <p class="features__card-description">
+                            BL
+                        </p>
+                    </div>
+                    <div class="features__card features__card-3">
+                        <h3 class="features__card-title" id="br">33Psi</h3>
+                        <p class="features__card-description">
+                            BR
+                        </p>
+                    </div>
+                    <div class="features__card features__card-4">
+                        <h3 class="features__card-title" id="fr">33Psi</h3>
+                        <p class="features__card-description">
+                            FR
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <img src="assets/img/map.svg" alt="" class="features__map">
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section" id="featured" style="padding-bottom:3rem;">
+            <h2 class="section__title">
+                Navigation
+            </h2>
+            <div class="about__container container grid">
+                <div class="about__group">
+                    <div class="map__card">
+                        
+                        <!-- <img src="assets/img/dummymap.png">
+                        <form action="//www.google.com/maps" id="">
+                            <fieldset>
+                                <div class="inner">
+                                    <input aria-label="From Location Input" id="" name="saddr" placeholder="FROM"
+                                        type="text">
+                                    <input aria-label="To Location Input" id="" name="daddr" placeholder="TO"
+                                        type="text">
+                                    <div>
+                                        <input type="submit" value="PLAN NOW">
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form> -->
+                        <!-- <div class="mapouter">
+                            <div class="gmap_canvas"><iframe id="inframe" name="mapframe" class="gmap_iframe"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                    src="https://maps.google.com/maps?width=600&amp;height=450&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                    href="https://www.gachacute.com/">Gacha Cute</a></div>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    width: 600px;
+                                    height: 450px;
+                                }
+
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    width: 600px;
+                                    height: 450px;
+                                }
+
+                                .gmap_iframe {
+                                    width: 600px !important;
+                                    height: 450px !important;
+                                }
+                            </style>
+                        </div> -->
+                        <!-- <frame-options policy="SAMEORIGIN" /> -->
+                        <iframe id="inframe" name="mapframe" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7509397044632!2d77.49651251482153!3d12.923722790887295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ee159ba3729%3A0x75a3463d510cf26e!2sR.%20V.%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1672203711854!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" 
+                            ></iframe>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about__data">
+                    <form action="//www.google.com/maps" id="mapform" target="mapframe" >
+                        <div class="userinput">
+                            <label for="inp" class="inp">
+                                <input type="text" id="inp" aria-label="From Location Input" name="saddr"
+                                    placeholder="&nbsp;">
+                                <span class="label1">From</span>
+                                <span class="focus-bg"></span>
+                            </label></p>
+                            <label for="inp" class="inp">
+                                <input type="text" id="inp" aria-label="To Location Input" name="daddr"
+                                    placeholder="&nbsp;">
+                                <span class="label1">To</span>
+                                <span class="focus-bg"></span>
+                            </label>
+                            <div class="inp">
+                                <button type="submit" class="button-28" >Go</button>
+
+                                <!-- <button class="button-28" role="button">Go</button> -->
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <!-- <script>
+                           function updateurl(){
+                            var url = document.getElementById('mapform').action;
+                            var pos=url.search("/maps");
+                            var emb="/embed"
+                            origString = url.split('/');
+  
+            // Insert the string at the index position
+                            origString.splice(pos, 0, embed);
+  
+            // Join back the individual characters
+            // to form a new string
+                            newString = origString.join('');
+                            document.getElementById('mapform').action=newString;
+                            console.log(newString);
+                        //    document.getElementById('mapform').action=url+"&output=embed";
+                    }
+                           
+                            
+//                         var url = mapform.url + "&output=embed";
+// window.location.replace(url);
+                    </script> -->
+
+                    <!-- <script>
+                        const form = document.getElementById('mapform');
+                        const inframe = document.getElementById('infarme');
+                        //var formAction ="//www.google.com/maps";
+                        function logSubmit(){
+                            $("mapform").submit(function () {
+                
+                            formAction = $(this).attr("target");
+                            //inframe.setAttribute("src",formAction);
+                            formAction="inframe";
+
+                            //some other stuff...
+                        });
+                            // console.log(inframe.getAttribute("src"));
+                            console.log(formAction);
+                        }
+                        // const form = document.getElementById('mapform');
+                        // const inframe = document.getElementById('infarme');
+
+                        mapform.addEventListener('submit', logSubmit);
+                    </script> -->
+                </div>
+            </div>
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxBruzNWomRwIcEAdYHovZpAdnnCMxaz8&libraries=places&callback=initMap"
+                async defer></script>
+            <script src="assets/js/map.js"></script>
+            </section>
+
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!--=============== Onboard JS ===============-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src="./script.js"></script>
+
+    <!-- ===================Graph=================== -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/graph.js"></script> -->
+
+    <!-- ======================FireBase====================== -->
+<script src="./assets/js/firebase.js" type="module"></script>
+</body>
+
+</html>
